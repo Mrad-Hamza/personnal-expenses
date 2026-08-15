@@ -3,4 +3,5 @@ dist/
 coverage/
 apps/*/dist/
 apps/*/.env
+apps/*/openapi.json
 .env

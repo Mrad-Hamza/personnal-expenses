@@ -21,6 +21,27 @@
 - Deployment target for v1 is local-only: Docker Compose runs Postgres only; the API runs via `npm run dev:api`.
 - TDD for all logic-bearing code (product matching, analytics aggregation, auth). Jest for unit tests, Supertest for e2e tests against a real local Postgres.
 - Prisma `Decimal` fields (`price`) must be explicitly converted to JS `number` before being returned from any service method, so API responses are always numeric, never Decimal-serialized strings.
+- Dependency versions in `apps/api/package.json` are **pinned exactly** (no `^`/`~`). Install new deps with `npm install --save-exact --workspace=apps/api <pkg>`.
+- Every controller gets `@ApiTags`/`@ApiOperation`/`@ApiResponse` and every DTO gets `@ApiProperty`, following the pattern in `auth.controller.ts` / `register.dto.ts` (see the Swagger + Postman task below). `npm run docs:generate -w apps/api` regenerates `docs/postman/personnal-expenses.postman_collection.json` from the live decorators — run it again after Tasks 6-9 add their own endpoints.
+
+---
+
+## Task (ad-hoc): Swagger (OpenAPI) + Postman collection
+
+Added mid-execution, after Task 5, at the user's request. Not one of the original 11 tasks — inserted here for history.
+
+**Files:**
+- Modify: `apps/api/package.json` (added `@nestjs/swagger@8.1.1`, `openapi-to-postmanv2@6.3.3`)
+- Create: `apps/api/src/swagger.ts` — `buildOpenApiDocument(app)`, shared by `main.ts` and the export script
+- Modify: `apps/api/src/main.ts` — mounts `SwaggerModule.setup('docs', app, document)`, so `GET /docs` (UI) and `GET /docs-json` (raw spec) are live whenever the API runs
+- Modify: `apps/api/src/auth/auth.controller.ts`, `apps/api/src/auth/dto/register.dto.ts` — reference decorator pattern (`@ApiTags`, `@ApiOperation`, `@ApiResponse`, `@ApiCookieAuth`, `@ApiProperty`)
+- Create: `apps/api/scripts/generate-openapi.ts` — boots the Nest app context (no HTTP listen), writes `apps/api/openapi.json` (gitignored, regenerated on demand)
+- Create: `apps/api/scripts/generate-postman.ts` — converts `openapi.json` into `docs/postman/personnal-expenses.postman_collection.json` via `openapi-to-postmanv2`, committed to the repo
+- Scripts added to `apps/api/package.json`: `docs:openapi`, `docs:postman`, `docs:generate` (chains both)
+
+Auth's cookie-based auth is registered in the spec via `.addCookieAuth('token', {...})` on `DocumentBuilder` — not the more common bearer-token setup, since that's not how this API authenticates.
+
+Verified: unit + e2e suites still pass; live app smoke-tested (`/health`, `/docs-json` lists all 5 routes, `/docs` returns 200); `docs:openapi` → `docs:postman` produces a Postman collection with all 4 auth requests correctly named from their `@ApiOperation` summaries, grouped under an "auth" folder (from `@ApiTags`).
 
 ---
 
