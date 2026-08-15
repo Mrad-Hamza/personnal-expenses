@@ -1,0 +1,17 @@
+{
+  "name": "personnal-expenses",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run start:dev -w apps/api",
+    "build:api": "npm run build -w apps/api",
+    "test:api": "npm run test -w apps/api",
+    "test:api:e2e": "npm run test:e2e -w apps/api",
+    "prisma:generate": "npm run prisma:generate -w apps/api",
+    "prisma:migrate": "npm run prisma:migrate -w apps/api",
+    "prisma:migrate:deploy": "npm run prisma:migrate:deploy -w apps/api"
+  }
+}
