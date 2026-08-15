@@ -191,6 +191,7 @@ Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "target": "ES2021",
     "sourceMap": true,
     "outDir": "./dist",
