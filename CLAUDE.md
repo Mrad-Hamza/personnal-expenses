@@ -22,8 +22,9 @@ never introduce pnpm or yarn lockfiles/commands here.
 ## Current status (as of this checkpoint)
 
 Done, tested, and merged to `master`: monorepo/Docker scaffold, NestJS app
-skeleton with a `/health` route, Prisma schema + migration, and the full
-auth flow (register, login, logout, `/auth/me`, JWT-cookie guard).
+skeleton with a `/health` route, Prisma schema + migration, the full auth
+flow (register, login, logout, `/auth/me`, JWT-cookie guard), and Swagger
++ Postman collection generation.
 
 Not yet built: Categories, Products, Purchases, and Analytics modules; the
 global exception filter; the root README. These are Tasks 6–11 in the
@@ -48,6 +49,11 @@ implementation plan linked above — pick up there.
 - Prisma `Decimal` fields (`Purchase.price`) must be converted with
   `Number(...)` before being returned from a service method, so API JSON
   responses always carry numeric prices, not Decimal-serialized strings.
+- Every controller gets `@ApiTags`/`@ApiOperation`/`@ApiResponse`, every
+  DTO gets `@ApiProperty` (see `auth/` for the pattern). Live docs run at
+  `GET /docs` (UI) and `GET /docs-json` (spec). After adding routes, run
+  `npm run docs:generate -w apps/api` to regenerate
+  `docs/postman/personnal-expenses.postman_collection.json`.
 - **Dependency versions are pinned exactly, no `^`/`~` ranges**, in
   `apps/api/package.json`. When adding a new dependency, install it with
   `npm install --save-exact --workspace=apps/api <pkg>` rather than
