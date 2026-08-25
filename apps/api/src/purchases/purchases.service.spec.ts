@@ -90,6 +90,18 @@ describe('PurchasesService', () => {
     ).rejects.toThrow(BadRequestException);
   });
 
+  it('throws when the given productId does not belong to the user or does not exist', async () => {
+    prisma.product.findFirst.mockResolvedValue(null);
+
+    await expect(
+      service.create('user-1', { ...baseDto, productId: 'not-mine' }),
+    ).rejects.toThrow(NotFoundException);
+    expect(prisma.product.findFirst).toHaveBeenCalledWith({
+      where: { id: 'not-mine', userId: 'user-1' },
+    });
+    expect(prisma.purchase.create).not.toHaveBeenCalled();
+  });
+
   it('remove() throws NotFoundException for a purchase belonging to another user', async () => {
     prisma.purchase.findFirst.mockResolvedValue(null);
 
