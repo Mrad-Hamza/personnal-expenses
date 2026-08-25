@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import { endOfDay, format, startOfDay, startOfMonth, startOfWeek, startOfYear } from 'date-fns';
 import { PrismaService } from '../prisma/prisma.service';
 
@@ -62,6 +62,9 @@ export class AnalyticsService {
   }
 
   async inflation(userId: string, productId: string) {
+    if (!productId) {
+      throw new BadRequestException('productId is required');
+    }
     const purchases = await this.prisma.purchase.findMany({
       where: { userId, productId },
       orderBy: { purchasedAt: 'asc' },

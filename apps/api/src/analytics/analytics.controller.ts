@@ -40,10 +40,11 @@ export class AnalyticsController {
 
   @ApiOperation({ summary: 'Price history for a single product, ordered by purchase date' })
   @ApiResponse({ status: 200, description: 'Price history retrieved successfully' })
+  @ApiResponse({ status: 400, description: 'productId query param is required' })
   @ApiResponse({ status: 401, description: 'Unauthorized' })
   @Get('inflation')
-  inflation(@CurrentUser() user: JwtPayload, @Query('productId') productId: string) {
-    return this.analyticsService.inflation(user.sub, productId);
+  inflation(@CurrentUser() user: JwtPayload, @Query('productId') productId?: string) {
+    return this.analyticsService.inflation(user.sub, productId as string);
   }
 
   @ApiOperation({

@@ -67,4 +67,17 @@ describe('Analytics (e2e)', () => {
       expect.objectContaining({ price: 2.5 }),
     ]);
   });
+
+  it('GET /analytics/inflation without productId returns 400 instead of every product', async () => {
+    const { agent } = await registeredAgent('analytics-missing-id@example.com');
+    const categories = await agent.get('/categories').expect(200);
+    const categoryId = categories.body[0].id;
+
+    await agent
+      .post('/purchases')
+      .send({ productName: 'Milk', categoryId, price: 2.0, purchasedAt: '2026-01-05' })
+      .expect(201);
+
+    await agent.get('/analytics/inflation').expect(400);
+  });
 });
