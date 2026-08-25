@@ -1,7 +1,7 @@
 {
   "item": [
     {
-      "id": "a7240bfe-aa41-4339-8eee-5ca12381911f",
+      "id": "35968327-9d8b-4f37-9412-814d4b5f4bf6",
       "name": "App",
       "description": {
         "content": "",
@@ -9,7 +9,7 @@
       },
       "item": [
         {
-          "id": "d0e75d9c-cf6e-47cb-922c-6199e6829786",
+          "id": "f0385d73-8940-4b09-9cda-fec2a9598e25",
           "name": "App Controller get Health",
           "request": {
             "name": "App Controller get Health",
@@ -29,7 +29,7 @@
           },
           "response": [
             {
-              "id": "9c354a59-b3d1-4451-9594-88ace29efe3d",
+              "id": "1509f03e-e83c-4d85-a16e-d478dc9d8c55",
               "originalRequest": {
                 "url": {
                   "path": [
@@ -66,7 +66,7 @@
       "event": []
     },
     {
-      "id": "65846cb1-1500-47fa-8941-ae50a1336e9d",
+      "id": "780ac4c7-9fb0-4101-a21e-2f72ed51c357",
       "name": "auth",
       "description": {
         "content": "",
@@ -74,7 +74,7 @@
       },
       "item": [
         {
-          "id": "9075f0d3-f964-4168-b3f5-5a2e82b06827",
+          "id": "28aa23f0-47ba-4548-bc88-19b6964930c5",
           "name": "Create an account and log in (sets the auth cookie)",
           "request": {
             "name": "Create an account and log in (sets the auth cookie)",
@@ -110,7 +110,7 @@
           },
           "response": [
             {
-              "id": "5e20fdb5-6373-44f9-81b9-bc7e5939d29e",
+              "id": "c7865fb4-1ec0-40ec-b141-fb33efb17b47",
               "name": "Account created",
               "originalRequest": {
                 "url": {
@@ -148,7 +148,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "514f48ad-eed9-4287-9f61-59088a604513",
+              "id": "36c462a8-81f9-4927-9c4f-b0d9b765adb7",
               "name": "Email already registered",
               "originalRequest": {
                 "url": {
@@ -192,7 +192,7 @@
           }
         },
         {
-          "id": "582aa9db-6b52-478c-b1e7-947593ffd561",
+          "id": "0bc4b64f-2e3a-4833-8c8a-3d7fdb541dcd",
           "name": "Log in with email + password (sets the auth cookie)",
           "request": {
             "name": "Log in with email + password (sets the auth cookie)",
@@ -213,7 +213,7 @@
           },
           "response": [
             {
-              "id": "36e77b9e-4423-4489-b9af-0af9846f68dc",
+              "id": "d390272f-93c2-4a27-a34e-a3fc6d27e6ae",
               "name": "Logged in",
               "originalRequest": {
                 "url": {
@@ -243,7 +243,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "25f4517e-7b25-404f-afeb-b6f87ccf21bb",
+              "id": "7b478a53-f869-43ca-b8be-1bd50ab9f88a",
               "name": "Invalid credentials",
               "originalRequest": {
                 "url": {
@@ -279,7 +279,7 @@
           }
         },
         {
-          "id": "585ca2a0-d893-429a-b173-56cde347cf28",
+          "id": "f9a918bb-aa87-414d-9e05-337f6c72942f",
           "name": "Clear the auth cookie",
           "request": {
             "name": "Clear the auth cookie",
@@ -300,7 +300,7 @@
           },
           "response": [
             {
-              "id": "617e76f0-640c-410f-a8cb-cba1f36ca9b6",
+              "id": "e8bb1328-0c30-4215-8cfb-50be3fb7c323",
               "name": "Logged out",
               "originalRequest": {
                 "url": {
@@ -336,7 +336,7 @@
           }
         },
         {
-          "id": "2ad8eb60-ca99-4304-8c8d-bc075246c9e9",
+          "id": "e3dd1d73-0acc-4221-89e5-588484afbf28",
           "name": "Get the current logged-in user",
           "request": {
             "name": "Get the current logged-in user",
@@ -356,7 +356,7 @@
           },
           "response": [
             {
-              "id": "980b586b-8305-467a-a3f4-b235486139ef",
+              "id": "55976681-808c-4644-8767-6cca4a6b896a",
               "name": "Current user",
               "originalRequest": {
                 "url": {
@@ -386,7 +386,7 @@
               "_postman_previewlanguage": "text"
             },
             {
-              "id": "d5ac993f-2128-480d-9caf-c6800c1b2c14",
+              "id": "c0c480ff-cc70-4ce3-9bfd-af22912406ce",
               "name": "Not logged in",
               "originalRequest": {
                 "url": {
@@ -423,6 +423,1685 @@
         }
       ],
       "event": []
+    },
+    {
+      "id": "e839e9b2-e5ea-4a51-8107-0a9c0203683e",
+      "name": "products",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "63e9b649-3869-47ce-9ff1-031a727c89ad",
+          "name": "Search products by name (case-insensitive substring match)",
+          "request": {
+            "name": "Search products by name (case-insensitive substring match)",
+            "description": {},
+            "url": {
+              "path": [
+                "products"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET"
+          },
+          "response": [
+            {
+              "id": "00918d67-2912-4c9e-8235-a915f8fbc422",
+              "name": "Products matching the search query",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "products"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "f6ed7e78-1c81-41c9-a54c-7081b0cde461",
+              "name": "Not authenticated",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "products"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "827299f8-904a-409f-96a5-7577720b1a73",
+          "name": "Get a product with its purchase history",
+          "request": {
+            "name": "Get a product with its purchase history",
+            "description": {},
+            "url": {
+              "path": [
+                "products",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "string",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET"
+          },
+          "response": [
+            {
+              "id": "8f2f4c3b-d1a4-4c42-a37e-0356f98b59a7",
+              "name": "Product with purchase history",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "products",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "string",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "3cb41f95-ca8c-40d4-9438-2aaaffe040d6",
+              "name": "Not authenticated",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "products",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "string",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "085f35f1-1c63-47e5-bed5-ff5fbedfc959",
+              "name": "Product not found or not owned by user",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "products",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "string",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "d4d1bd86-f9a9-4ccb-a424-87890d4981ab",
+      "name": "categories",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "2c981620-ad4d-476b-b69b-0474ab2686e3",
+          "name": "List all categories for the current user",
+          "request": {
+            "name": "List all categories for the current user",
+            "description": {},
+            "url": {
+              "path": [
+                "categories"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b20434c0-a9f1-45a9-8d4e-e3d763640c5e",
+              "name": "Categories retrieved successfully",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "categories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "dbec6ec1-b0ad-4dae-bcde-e17d2ff0a44a",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "categories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4703f5fd-e053-47f2-b270-835a8f9f35f6",
+          "name": "Create a new category for the current user",
+          "request": {
+            "name": "Create a new category for the current user",
+            "description": {},
+            "url": {
+              "path": [
+                "categories"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Groceries\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "c2f5d85a-7c88-4ae8-99fc-1c1cdc2872a0",
+              "name": "Category created successfully",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "categories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Groceries\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "e6f63214-b630-406c-bd5b-f94b35e07c99",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "categories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Groceries\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "8bcc19a7-ad14-405c-9f62-862cadd9d459",
+              "name": "Category name already exists",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "categories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Groceries\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Conflict",
+              "code": 409,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "3f68a3df-2630-4ddf-9019-0bd554304eab",
+      "name": "purchases",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0ea6392c-9472-459c-b7e9-b9bdf8a5c648",
+          "name": "Log a purchase, reusing a matching product or creating a new one",
+          "request": {
+            "name": "Log a purchase, reusing a matching product or creating a new one",
+            "description": {},
+            "url": {
+              "path": [
+                "purchases"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"productName\": \"Milk\",\n  \"price\": 2.5,\n  \"purchasedAt\": \"2026-01-01\",\n  \"productId\": \"5f8d0d55-6c22-4a2f-9f2c-1f2b3c4d5e6f\",\n  \"categoryId\": \"5f8d0d55-6c22-4a2f-9f2c-1f2b3c4d5e6f\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "6b19ab6b-e80a-4c70-9f38-6509832bd015",
+              "name": "Purchase created successfully",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "purchases"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"productName\": \"Milk\",\n  \"price\": 2.5,\n  \"purchasedAt\": \"2026-01-01\",\n  \"productId\": \"5f8d0d55-6c22-4a2f-9f2c-1f2b3c4d5e6f\",\n  \"categoryId\": \"5f8d0d55-6c22-4a2f-9f2c-1f2b3c4d5e6f\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "08968335-af7b-4360-bf2d-2407672cd554",
+              "name": "categoryId is required to create a new product, or is unknown",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "purchases"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"productName\": \"Milk\",\n  \"price\": 2.5,\n  \"purchasedAt\": \"2026-01-01\",\n  \"productId\": \"5f8d0d55-6c22-4a2f-9f2c-1f2b3c4d5e6f\",\n  \"categoryId\": \"5f8d0d55-6c22-4a2f-9f2c-1f2b3c4d5e6f\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "da1d8d16-94ae-4e94-97c2-9c6c7274f5c8",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "purchases"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"productName\": \"Milk\",\n  \"price\": 2.5,\n  \"purchasedAt\": \"2026-01-01\",\n  \"productId\": \"5f8d0d55-6c22-4a2f-9f2c-1f2b3c4d5e6f\",\n  \"categoryId\": \"5f8d0d55-6c22-4a2f-9f2c-1f2b3c4d5e6f\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "fc3ce33d-f6ab-4707-b5eb-7eda47b9ee9a",
+              "name": "productId does not exist for this user",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "purchases"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"productName\": \"Milk\",\n  \"price\": 2.5,\n  \"purchasedAt\": \"2026-01-01\",\n  \"productId\": \"5f8d0d55-6c22-4a2f-9f2c-1f2b3c4d5e6f\",\n  \"categoryId\": \"5f8d0d55-6c22-4a2f-9f2c-1f2b3c4d5e6f\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f73c8824-33e4-4c5b-b5f2-10692404f162",
+          "name": "List purchases for the current user, optionally filtered by date range",
+          "request": {
+            "name": "List purchases for the current user, optionally filtered by date range",
+            "description": {},
+            "url": {
+              "path": [
+                "purchases"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "from",
+                  "value": "string",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "to",
+                  "value": "string",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET"
+          },
+          "response": [
+            {
+              "id": "e99f4cd2-1cd0-4898-b5e4-8a6ee03a5c90",
+              "name": "Purchases retrieved successfully",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "purchases"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "from",
+                      "value": "string"
+                    },
+                    {
+                      "key": "to",
+                      "value": "string"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "45df88b2-8bd1-46bf-b4a6-8277d86d00c5",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "purchases"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "from",
+                      "value": "string"
+                    },
+                    {
+                      "key": "to",
+                      "value": "string"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "35a95988-a242-4dbe-bb28-6606c835355f",
+          "name": "Update a purchase's price and/or date",
+          "request": {
+            "name": "Update a purchase's price and/or date",
+            "description": {},
+            "url": {
+              "path": [
+                "purchases",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "string",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "PATCH",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"price\": 2.8,\n  \"purchasedAt\": \"2026-02-01\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "102be868-0c87-4d75-a8d5-e4f4ab9cca49",
+              "name": "Purchase updated successfully",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "purchases",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "string",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "PATCH",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"price\": 2.8,\n  \"purchasedAt\": \"2026-02-01\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "a9642cc8-ad33-4f18-a3ad-bb3dd6cb4cd8",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "purchases",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "string",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "PATCH",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"price\": 2.8,\n  \"purchasedAt\": \"2026-02-01\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "ee91fd4f-bbd6-41e3-b1e9-b223cac13176",
+              "name": "Purchase not found or not owned by user",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "purchases",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "string",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "PATCH",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"price\": 2.8,\n  \"purchasedAt\": \"2026-02-01\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9453b6b7-bcd9-4b3a-9206-c50d421ffed3",
+          "name": "Delete a purchase",
+          "request": {
+            "name": "Delete a purchase",
+            "description": {},
+            "url": {
+              "path": [
+                "purchases",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "string",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "DELETE"
+          },
+          "response": [
+            {
+              "id": "da3014b2-3cc1-42d5-b20f-70d2f4c81f34",
+              "name": "Purchase deleted successfully",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "purchases",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "string",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "b65afe3f-e02e-4831-8aa4-1d695e2944bd",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "purchases",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "string",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "f247ff68-0088-47cb-a1ea-783bf599af7c",
+              "name": "Purchase not found or not owned by user",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "purchases",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "string",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "c92ad8c6-4365-40a8-8e89-f85a9a8ad219",
+      "name": "analytics",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "3375ff48-f15a-4ebc-abc6-e25228e9591b",
+          "name": "Total spend bucketed by week, month, or year",
+          "request": {
+            "name": "Total spend bucketed by week, month, or year",
+            "description": {},
+            "url": {
+              "path": [
+                "analytics",
+                "spend"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "period",
+                  "value": "string",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "from",
+                  "value": "string",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "to",
+                  "value": "string",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET"
+          },
+          "response": [
+            {
+              "id": "2891a830-0509-485c-b69b-f81c2a30196c",
+              "name": "Spend totals retrieved successfully",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "analytics",
+                    "spend"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "period",
+                      "value": "string"
+                    },
+                    {
+                      "key": "from",
+                      "value": "string"
+                    },
+                    {
+                      "key": "to",
+                      "value": "string"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "49e9e887-10cd-4f62-ba7c-47aa995b5fd7",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "analytics",
+                    "spend"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "period",
+                      "value": "string"
+                    },
+                    {
+                      "key": "from",
+                      "value": "string"
+                    },
+                    {
+                      "key": "to",
+                      "value": "string"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a66536f7-a507-4ed8-944d-d43914e8233c",
+          "name": "Spend totals bucketed by period and broken down by category",
+          "request": {
+            "name": "Spend totals bucketed by period and broken down by category",
+            "description": {},
+            "url": {
+              "path": [
+                "analytics",
+                "spend-by-category"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "period",
+                  "value": "string",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "from",
+                  "value": "string",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "to",
+                  "value": "string",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET"
+          },
+          "response": [
+            {
+              "id": "1dbcccb5-eddc-4a09-b4e7-0a5d08ccec71",
+              "name": "Spend-by-category totals retrieved successfully",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "analytics",
+                    "spend-by-category"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "period",
+                      "value": "string"
+                    },
+                    {
+                      "key": "from",
+                      "value": "string"
+                    },
+                    {
+                      "key": "to",
+                      "value": "string"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "2e3856cc-1588-46cd-ad38-6bf0ae1216fb",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "analytics",
+                    "spend-by-category"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "period",
+                      "value": "string"
+                    },
+                    {
+                      "key": "from",
+                      "value": "string"
+                    },
+                    {
+                      "key": "to",
+                      "value": "string"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0a2590fc-ba37-4610-912d-81fb5dd5ac2c",
+          "name": "Price history for a single product, ordered by purchase date",
+          "request": {
+            "name": "Price history for a single product, ordered by purchase date",
+            "description": {},
+            "url": {
+              "path": [
+                "analytics",
+                "inflation"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "productId",
+                  "value": "string",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET"
+          },
+          "response": [
+            {
+              "id": "9f051657-9757-4f4c-a495-bf0be7b6772e",
+              "name": "Price history retrieved successfully",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "analytics",
+                    "inflation"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "productId",
+                      "value": "string"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "b5f5830f-13ac-4b10-b665-9c409048caee",
+              "name": "productId query param is required",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "analytics",
+                    "inflation"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "productId",
+                      "value": "string"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "4d97cec0-54a3-408d-9256-e6ee1aaca22c",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "analytics",
+                    "inflation"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "productId",
+                      "value": "string"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bf98bd31-fadc-4a58-8a41-d4a5ad512ee7",
+          "name": "Top 10 products by absolute price change over the period, unchanged products excluded",
+          "request": {
+            "name": "Top 10 products by absolute price change over the period, unchanged products excluded",
+            "description": {},
+            "url": {
+              "path": [
+                "analytics",
+                "inflation-overview"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "period",
+                  "value": "string",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "from",
+                  "value": "string",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "to",
+                  "value": "string",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET"
+          },
+          "response": [
+            {
+              "id": "97925f16-75aa-4d31-b470-cd3e45852818",
+              "name": "Inflation overview retrieved successfully",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "analytics",
+                    "inflation-overview"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "period",
+                      "value": "string"
+                    },
+                    {
+                      "key": "from",
+                      "value": "string"
+                    },
+                    {
+                      "key": "to",
+                      "value": "string"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "06a4ddfc-8ef8-48a6-85d7-4d9a16fb6b95",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "analytics",
+                    "inflation-overview"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "period",
+                      "value": "string"
+                    },
+                    {
+                      "key": "from",
+                      "value": "string"
+                    },
+                    {
+                      "key": "to",
+                      "value": "string"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
     }
   ],
   "event": [],
@@ -434,7 +2113,7 @@
     }
   ],
   "info": {
-    "_postman_id": "efca2dc5-9576-4013-aa2a-9c9fc4ee494d",
+    "_postman_id": "82a2d673-81fe-4eba-b82d-27b890cc5181",
     "name": "Personal Expenses & Inflation Tracker API",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {
