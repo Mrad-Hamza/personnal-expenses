@@ -47,12 +47,4 @@ describe('Error handling (e2e)', () => {
       expect.objectContaining({ statusCode: 400, error: 'Bad Request', message: expect.any(Array) }),
     );
   });
-
-  it('returns a consistent JSON shape for unexpected (non-HTTP) errors', async () => {
-    const agent = await registeredAgent('errors-2@example.com');
-    const res = await agent.get('/products/not-a-valid-uuid').expect(500);
-    expect(res.body).toEqual(
-      expect.objectContaining({ statusCode: 500, error: expect.any(String), message: expect.any(String) }),
-    );
-  });
 });

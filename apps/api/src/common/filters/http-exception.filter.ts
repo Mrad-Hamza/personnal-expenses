@@ -21,8 +21,20 @@ export class AllExceptionsFilter implements ExceptionFilter {
     const error =
       body && typeof body === 'object' && 'error' in body
         ? (body as { error: string }).error
-        : HttpStatus[statusCode];
+        : this.getStatusText(statusCode);
 
     response.status(statusCode).json({ statusCode, message, error });
+  }
+
+  private getStatusText(statusCode: number): string {
+    const statusMap: Record<number, string> = {
+      400: 'Bad Request',
+      401: 'Unauthorized',
+      403: 'Forbidden',
+      404: 'Not Found',
+      409: 'Conflict',
+      500: 'Internal Server Error',
+    };
+    return statusMap[statusCode] || HttpStatus[statusCode] || 'Unknown Error';
   }
 }
