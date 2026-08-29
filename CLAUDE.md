@@ -21,14 +21,18 @@ never introduce pnpm or yarn lockfiles/commands here.
 
 ## Current status (as of this checkpoint)
 
-Done, tested, and merged to `master`: monorepo/Docker scaffold, NestJS app
-skeleton with a `/health` route, Prisma schema + migration, the full auth
-flow (register, login, logout, `/auth/me`, JWT-cookie guard), and Swagger
-+ Postman collection generation.
+The backend (`apps/api`) is complete — Tasks 1–11 of the implementation
+plan linked above are all done, tested, and merged to `master`:
+monorepo/Docker scaffold, NestJS app skeleton with a `/health` route,
+Prisma schema + migration, the full auth flow (register, login, logout,
+`/auth/me`, JWT-cookie guard), Categories, Products (with autocomplete
+search), Purchases (with product reuse-or-create), Analytics (spend,
+spend-by-category, inflation, inflation-overview), a global exception
+filter for consistent error responses, Swagger + Postman collection
+generation, and this root documentation.
 
-Not yet built: Categories, Products, Purchases, and Analytics modules; the
-global exception filter; the root README. These are Tasks 6–11 in the
-implementation plan linked above — pick up there.
+Nothing backend-related remains from the original plan. The frontend
+(`apps/web`) is a separate, not-yet-written plan — pick up there next.
 
 ## Backend conventions (`apps/api`)
 
