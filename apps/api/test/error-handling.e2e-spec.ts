@@ -1,8 +1,10 @@
-import { INestApplication } from '@nestjs/common';
+import { INestApplication, ValidationPipe } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
+import cookieParser from 'cookie-parser';
 import request from 'supertest';
 import { AppModule } from '../src/app.module';
 import { PrismaService } from '../src/prisma/prisma.service';
+import { AllExceptionsFilter } from '../src/common/filters/http-exception.filter';
 
 describe('Error handling (e2e)', () => {
   let app: INestApplication;
@@ -11,13 +13,10 @@ describe('Error handling (e2e)', () => {
   beforeAll(async () => {
     // Build the app the same way main.ts does, since this test verifies
     // the global pipe + filter registered there.
-    const { NestFactory } = await import('@nestjs/core');
-    const cookieParser = (await import('cookie-parser')).default;
-    const { ValidationPipe } = await import('@nestjs/common');
-    app = await NestFactory.create((await import('../src/app.module')).AppModule);
+    const moduleRef = await Test.createTestingModule({ imports: [AppModule] }).compile();
+    app = moduleRef.createNestApplication();
     app.use(cookieParser());
     app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
-    const { AllExceptionsFilter } = await import('../src/common/filters/http-exception.filter');
     app.useGlobalFilters(new AllExceptionsFilter());
     await app.init();
     prisma = app.get(PrismaService);
